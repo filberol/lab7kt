@@ -6,7 +6,7 @@ import lab6server.data.utilities.LanguageManager
 /**
  * Abstract command when executing anything will return a boolean value as a feedback of the execution of the command.
  */
-abstract class AbstractCommand(lang: LanguageManager) {
+sealed class AbstractCommand(lang: LanguageManager) {
     /**
      * Specified langHolder returns language needed to print to console.
      */
